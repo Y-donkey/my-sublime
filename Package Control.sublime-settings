@@ -1,0 +1,21 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"ColorPicker",
+		"ConvertToUTF8",
+		"Emmet",
+		"Git",
+		"Github Tools",
+		"Package Control",
+		"RailsCasts Colour Scheme",
+		"SideBarEnhancements",
+		"SublimeREPL",
+		"SyncedSideBar"
+	]
+}

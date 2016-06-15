@@ -1,0 +1,92 @@
+后代：  >
+	例如： nav>ul>li
+	效果： <nav>
+			<ul>
+				<li></li>
+			</ul>
+		   </nav>
+
+
+兄弟： +
+	例如： div+p+bq
+	效果： <div></div>
+			<p></p>
+			<blockquote></blockquote>
+
+
+
+上级： ^
+	例如： span+em^bq
+	效果： <span></span>
+			<em></em>
+			<blockquote></blockquote>
+
+	例如： div+div>p>span+em^^bq
+	效果： 	<div></div>
+			<div>
+				<p><span></span><em></em></p>
+			</div>
+			<blockquote></blockquote>
+
+
+
+分组： ()
+	例如:div>(header>ul>li*2>a)+footer>p
+	效果：<div>
+		<header>
+			<ul>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</header>
+		<footer>
+			<p></p>
+		</footer>
+	    </div>
+
+
+自增符号： $
+	例如： ul>li.item$*5
+	效果： <ul>
+			<li class="item1"></li>
+			<li class="item2"></li>
+			<li class="item3"></li>
+			<li class="item4"></li>
+			<li class="item5"></li>
+			</ul>
+
+	例如：h$[title=item$]{Header $}*3
+	效果： <h1 title="item1">Header 1</h1>
+		   <h2 title="item2">Header 2</h2>
+		   <h3 title="item3">Header 3</h3>
+
+	例如：ul>li.item$$$*5
+	效果： <ul>
+				<li class="item001"></li>
+				<li class="item002"></li>
+				<li class="item003"></li>
+				<li class="item004"></li>
+				<li class="item005"></li>
+            </ul>
+
+
+文本： {}
+	例如： a{link}
+	效果： <a href="">link</a>
+
+
+其他： 例子： !
+		效果： <!DOCTYPE html>
+				<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+					<title>Document</title>
+				</head>
+				<body>
+					
+				</body>
+				</html>
+		例子： input:radio
+		效果： <input type="radio" name="" id="">
+		
+
